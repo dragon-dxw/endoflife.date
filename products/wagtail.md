@@ -9,12 +9,18 @@ activeSupportColumn: true
 command: python -c "import wagtail; print(wagtail.__version__)"
 sortReleasesBy: "release"
 releases:
+  - releaseCycle: "2.15"
+    support: 2022-11-01
+    release: 2021-11-01
+    lts: true
+    eol: false
+    latest: "2.15"
   - releaseCycle: "2.14"
-    support: 2021-11-01
+    support: 2022-02-01
     release: 2021-08-01
     lts: false
     eol: false
-    latest: "2.14.1"
+    latest: "2.14.2"
   - releaseCycle: "2.13"
     eol: 2022-02-01
     support: 2021-08-01
@@ -65,7 +71,7 @@ Minor/Feature releases of Wagtail are released every three months. A feature rel
 
 The Wagtail team provides [official security support](https://docs.wagtail.io/en/stable/contributing/security.html#supported-versions) for:
 
-* The two most recent Wagtail release series. (Currently `2.13` and `2.12`)
+* The two most recent Wagtail release series.
 * The latest LTS release.
 
 *[LTS]: Long Term Support
